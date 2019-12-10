@@ -1,0 +1,357 @@
+<!doctype html>
+<!--Assignment 03, Created by Ting Li, 06Oct2018-->
+<!--ID: 301025864-->
+<html language="en">
+<head>
+    <title>Product Page</title>
+    <meta charset="ult-8">
+    <script>
+    function banLogoOn(obj){
+        obj.style.height="60px";
+    }
+    function banLogoOut(obj){
+        document.getElementsByClassName("bannerLogo")[0].style.height="54px";
+    }
+    function tableRowTOn(obj){
+        obj.style.overflowY="scroll";
+        obj.style.cursor="s-resize";
+    }
+    function tableRowTOut(obj){
+        obj.style.overflowY="hidden";
+    }
+    function bagImgSubDisplayClick(obj){
+        var a=document.getElementById("bagImgShow");
+        if (obj.id=="bagFront")
+        a.src="imagesAss03/coachBagblue.jpeg";
+        if (obj.id=="bagBB")
+        a.src="imagesAss03/coachBB.jpeg";
+        if (obj.id=="bagBody")
+        a.src="imagesAss03/coachBody.jpeg";
+        if (obj.id=="bagOpen")
+        a.src="imagesAss03/coachOpen.jpeg";
+        if (obj.id=="bagInside")
+        a.src="imagesAss03/coachside.jpeg";
+    }
+    function bannerChange(obj){
+        obj.style.cursor="pointer";
+        if (obj.id=="bannerTabRogue"){
+            document.getElementById("bodyDivMId").style.display="block";
+            document.getElementById("googleMap").style.display="none";
+        }
+        if (obj.id=="bannerTabMap"){
+            document.getElementById("bodyDivMId").style.display="none";
+            document.getElementById("googleMap").style.display="block";
+        }
+    }
+    </script>
+    <style>
+    .bodyMainstyle{
+        font-family: verdana;
+        margin: 0;
+        width:1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bannerDiv{
+        font-size: 16px;
+        padding:0;
+        height:90px;
+        background-color:black;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top:15px;
+    }
+    .bannerLogo{
+        height:54px;
+        width: auto;
+    }
+    .bannerImgBackL{
+        float:left;
+        height: 80px;
+    }
+    .bannerImgBackR{
+        float:right;
+        height:80px;
+        transform: rotateY(180deg); 
+    }
+    .bannerImgInR{
+        width: 100px;
+        height: 40px; 
+        transform:rotateY(180deg);
+        /* backface-visibility: hidden;
+        transform: translateZ(0);    */
+    }
+    .bannerImgInL{
+        width:100px;
+        height:40px;
+    }
+    .bannerImgProdcut{
+        border-radius: 50%;
+        width:5%;
+        margin-top:10px;
+    }
+    .bannerInDiv{
+        margin-left: 150px;
+        display:inline-block;
+        width:442px;
+        background-color:black;
+        text-align: center;
+    }
+    .bannerDropD{
+        height:30px;
+        background-color: black;
+        display: block;
+    }
+    #bannerTabRogue,#bannerTabMap:hover{
+        cursor:pointer;
+    }
+    .bodyDiv{
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-left-color: darkgrey;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-right-color: darkgrey;
+    }
+    .bodyDivM{
+        width: 980px;
+        height: 820px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(241, 237, 237);
+        margin-top:0;
+        /* border-left-style: solid;
+        border-left-width: 1px;
+        border:  */
+    }
+    .bannerTabDiv{
+        margin: auto;
+        width: 600px;
+    } 
+    .bannerTab{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        display: inline;
+        color:aliceblue;
+
+    }
+    .coachBagImg{
+        width:400px;
+    }
+    .coachBagImgDiv{
+        display:inline-block;
+        width:450px;
+        height: 500px;
+        margin-left:35px;
+    }
+    .tableRowS{
+        width:350px;
+        height:300px;
+        overflow:hidden;
+        margin-left: 10px;
+        border-top:lightgray;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-bottom:lightgray;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    table{
+        margin-top: 50px;
+        padding-top: 10px;
+    }
+    .tableRowF{
+        height:40px;
+        text-align:left;
+    }
+    .tableRowT{
+        text-align: center;
+        padding-right:20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        line-height: 2em;
+        width:300px;
+    }
+    .listStyle{
+        line-height:2.5em;
+        margin-bottom:1.5em;
+    }
+    .imageTabDiv{
+        margin-left:50px;
+    }
+    .imgesTabSubDiv{
+        height:80px;
+        width:80px;
+        display: inline-block;
+    }
+    .imgesTabSubDiv img{
+        height:80px;
+        width:80px;
+    }
+    .tablelistFdiv{
+        margin-top:50px;
+    }
+    .tablelistF{
+        width: 600px;
+        height: 150px;
+        margin-left: 70px;
+        margin-top:20px;
+        padding-top:0;
+        text-align: center;
+    }
+    .tablelistFRowF{
+        background-color:lightgray;
+        border-top-color: lightgray; 
+    }
+    a:hover{
+        color:red;
+        text-decoration: none;
+    }
+    a:visited{
+        color:lightgray;
+        text-decoration: none;
+    }
+    a:active{
+        color:black;
+        text-decoration: none;
+    }
+    a:link{
+        color:lightgray;
+        text-decoration: none;
+    }
+    .tableLinkDiv{
+        display: block;
+        height:40px;
+        font-size: 12px;
+    }
+    .googleMapDiv{
+	padding-top: 30px;
+	padding-left: 80px;
+    display: none;
+}
+    .googleMapWidth{
+        width: 90%;
+    }
+    </style>
+</head>
+<body class="bodyMainstyle">
+    <div class="bannerDiv">
+         <img class="bannerImgBackL"src="imagesAss03/bannerback2.jpg"alt="floral design">
+         <img class="bannerImgBackR"src="imagesAss03/bannerback2.jpg"alt="floral design">
+         <img class="bannerImgProdcut" src="imagesAss03/coachBagblue.jpeg" alt="coach bag">
+         <div class="bannerInDiv">
+             <img class="bannerImgInR"src="imagesAss03/bannerback1.jpg"alt="floral design">
+ <!--Because I did this function by Css in my assignment2, I just wanna try another way in Assignment 03-->
+            <a href="https://ca.coach.com/"target="_blank"><img onmouseover="banLogoOn(this)" onmouseout="banLogoOut(this)"class="bannerLogo"src="imagesAss03/logo-coach.svg"alt="Coach logo"></a>
+             <img class="bannerImgInL"src="imagesAss03/bannerback1.jpg"alt="floral design">
+        </div>
+        <img class="bannerImgProdcut" style="float:right;" src="imagesAss03/coachBagblue.jpeg" alt="coach bag">
+    </div>
+    <div class="bannerDropD">
+        <div class="bannerTabDiv">
+            <a href="../index.html" target="_blank"><div class="bannerTab">Home Page</div></a>
+            <a href="https://ca.coach.com/en_CA/coach-rogue-25/54536.html?cgid=womens-event-picks&dwvar_color=BPSKY#spu=0&gclid=Cj0KCQjwgOzdBRDlARIsAJ6_HNk_GXbh_oC8SMSLWP-xhHCwrw9qe6TUBNdVs3EqsQGLUy1YXOSOVg8aAvvhEALw_wcB&cgid=womens-event-picks&start=21" target="_blank"><div class="bannerTab">Coach Rogue Website</div></a>
+            <div id="bannerTabRogue" onclick="bannerChange(this)" class="bannerTab">Product Page</div>
+            <div id="bannerTabMap" onclick="bannerChange(this)" class="bannerTab">Canada coach Map</div>
+        </div>       
+    </div>
+    <div class="bodyDiv">
+        <div class="bodyDivM">
+        <div id="bodyDivMId">
+            <div class="coachBagImgDiv">
+                <img id="bagImgShow" class="coachBagImg"src="imagesAss03/coachBagblue.jpeg"alt="coach Rogue bag">
+            </div>    
+            <div class="coachBagImgDiv">
+             <table>
+                 <tr class="tableRowF">
+                     <th id="tableThLink">
+                         <div style="display:inline-block; height: 40px;">
+                             Product Details
+                      </div>
+                        <div class="tableLinkDiv" >
+                            <a  href="Details.html">
+                                [Click to View larger picture]                               
+                            </a>
+                        </div>
+                        </th>
+                 </tr>
+                <tr>
+                    <td>
+                        <div id="tableRowS" onmouseover="tableRowTOn(this)" onmouseout="tableRowTOut(this)" class="tableRowS">
+                            <ul class="listStyle">
+                                <li>Glovetanned pebble leather</li>
+                                <li>Inside zip and snap pockets</li>
+                                <li>Zip closure, fabric and suede lining</li>
+                                <li>Two open compartments</li>
+                                <li>Handles with 3 1/2" drop</li>
+                                <li>Detachable straps with 10 1/2" drop for shoulder wear</li>
+                                <li>Shoulder straps can be linked together for crossbody wear</li>
+                                <li>Compatible with Coach interchangeable straps</li>
+                                <li>9 3/4" (L) x 7 1/2" (H) x 5 1/2" (W)</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tableRowT">
+                     Inspired by free spirits, rebels and dreamers, the aptly named Rogue is a go-anywhere bag. Smaller than the original, the 25 is crafted of glovetanned pebble leather.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="imageTabDiv">
+            <div id="bagFront" onclick="bagImgSubDisplayClick(this)" class="imgesTabSubDiv">
+                <img src="imagesAss03/coachBagblue.jpeg" alt="bag front image">
+            </div>
+            <div  id="bagBB" onclick="bagImgSubDisplayClick(this)" class="imgesTabSubDiv">
+                <img src="imagesAss03/coachBB.jpeg" alt="bag back image">
+            </div>
+            <div  id="bagBody" onclick="bagImgSubDisplayClick(this)" class="imgesTabSubDiv">
+                <img src="imagesAss03/coachBody.jpeg" alt="bag body image">
+            </div>
+            <div  id="bagOpen" onclick="bagImgSubDisplayClick(this)" class="imgesTabSubDiv">
+                <img src="imagesAss03/coachOpen.jpeg" alt="bag open image">
+            </div>
+            <div  id="bagInside" onclick="bagImgSubDisplayClick(this)" class="imgesTabSubDiv">
+                <img src="imagesAss03/coachside.jpeg" alt="bag side image">
+            </div>
+        </div>
+        <div class="tablelistFdiv">
+            <table class="tablelistF">
+                <tr class="tablelistFRowF">
+                    <th>Rogue Bag</th>
+                    <th>Size (around)</th>
+                    <th>Price (From)</th>
+                </tr>
+                <tr>
+                    <td>Rogue 17</td>
+                    <td>6 1/2" (L) x 5 1/4" (H) x 4" (W)</td>
+                    <td>$475</td>
+                </tr>
+                <tr>
+                    <td>Rogue 25</td>
+                    <td>9 3/4" (L) x 7 1/2" (H) x 5 1/2" (W)</td>
+                    <td>$700</td>
+                </tr>
+                <tr>
+                    <td>Rogue 30</td>
+                    <td>12 1/4" (L) x 9 3/4" (H) x 5 1/2" (W)</td>
+                    <td>$995</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="googleMap"class="googleMapDiv">
+        <div style="height:30px;">Find coach in Alberta, Saskatchewan and Ontario</div>
+            <map id="ImgMap0" name="ImgMap0">
+				<area alt="saskatchewan" coords="305, 439, 252, 428, 213, 576, 238, 584, 292, 593, 294, 582" href="https://www.kijiji.ca/b-saskatchewan/coach/k0l9009" title="click to find where to buy coach in saskatchewan" shape="poly" target="_blank">
+				<area alt="Alberta" coords="244, 429, 185, 406, 153, 486, 176, 552, 175, 568, 211, 578, 248, 428" href="https://www.crossironmills.com/en/stores/accessories-leather-luggage-calgary/coach-outlet/" title="click to find where to buy Coach in Alberta"shape="poly" target="_blank">
+				<area alt="Ontario" coords="395, 483, 351, 537, 349, 590, 366, 602, 406, 604, 426, 588, 453, 612, 468, 624, 491, 624, 481, 649, 479, 682, 520, 663, 516, 642, 537, 644, 553, 616, 552, 609, 536, 616, 504, 608, 483, 546, 460, 529, 451, 503, 446, 499, 421, 499" href="https://www.thebay.com/search/EndecaSearch.jsp?bmArch=bmForm&bmForm=endeca_search_form_one&bmArch=bmIsForm&bmIsForm=true&bmHidden=submit-search&submit-search=&bmArch=bmSingle&bmSingle=N_Dim&bmHidden=N_Dim&N_Dim=0&bmArch=bmHidden&bmHidden=Ntk&bmHidden=Ntk&Ntk=Entire+Site&bmArch=bmHidden&bmHidden=Ntx&bmHidden=Ntx&Ntx=mode%2Bmatchpartialmax&bmHidden=PA&PA=TRUE&SearchString=coach" title="click to find where to buy coach bag in ON."shape="poly" target="_blank">
+			</map>
+            <img class="googleMapWidth" src="imagesAss03/CanadaGoogleMap.png" alt="Canada Google Map" usemap="#ImgMap0">
+    </div> 
+    </div>
+</div>
+<div style="height:50px;background-color: black;color:aliceblue; text-align: center;padding-top: 10px;">&copy;&nbsp;&nbsp;Copyright-Ting-Comp213-Assignment 3</div>
+</body>   

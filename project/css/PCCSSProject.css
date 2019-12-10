@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    background-color: rgb(243, 242, 242);
+}
+#bannerNav
+{
+    height: 600px;
+    /* overflow: hidden; */
+    margin-top: 100px;
+}
+.bannerlogo
+{
+    padding-top:100px;
+    height:400px;
+    width:300px;
+    display:inline-block;
+}
+.profileImg
+{
+    height:100px;
+    width: 100px;
+}
+.bannerInnerDiv
+{
+    background-image: url("../img/img_bannerhouse.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:rgba(11, 11, 117, 0.2);
+    height:600px;
+    z-index: 1;
+    top:0;
+}
+#bannerprofile
+{
+    height:300px;
+    width:300px;
+    padding-top:130px;
+    float:right;
+}
+.profileTextColor
+{
+    background-color: rgba(184, 205, 245, 0.795);
+    height: 200px;
+    width: 200px;
+    display: block;
+    padding-left: 15px;
+    border-radius: 25px;
+}
+.navBar
+{
+    height:50px;
+    width:550px;
+    background-color: orange;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    font-size:1.6em;
+    color:white;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 25px;
+}
+.navBar:hover
+{
+    width:650px;
+    height:110px;
+    -webkit-transition:width 2s,height 2s;
+    transition:width 2s,height 2s;
+}
+.divAboveNavBar
+{
+    height:350px;
+}
+#navMainSpan
+{
+    height:100px;
+    width: 100%;
+    background:rgb(245, 236, 236) url("../img/img_logo.png") no-repeat left top;
+    background-size: 200px;
+    /* position:fixed; */
+    top:0;
+    z-index: 2;
+    box-shadow: 2px 0 2px rgb(155, 155, 155);
+}
+#navHomepage{
+    margin-left: 150px;
+}
+.leftNavBarClass
+{
+    height: 500px;
+    width: 200px;
+    float: left;
+}
+.navLeftSpan
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height:30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.navTopSpan
+{
+    height: 65px;
+    padding: 35px 10px 0px 10px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+#content
+{
+    height: 700px;
+    display: inline-block;
+    position: relative;
+    /* float:right; */
+}
+.propertyImgDown
+{
+    width:600px;
+    height:400px;
+}
+.propertyGeneralClass
+{
+    display: none;
+    height:500px;
+    line-height: 2em;
+    /* width:500px; */
+}
+.PropertVIClass
+{
+    width: 600px;
+}
+.navLeftSpan:hover
+{
+background-color: rgb(233, 233, 233);
+}
+.navLeftSpan:active
+{
+    background-color: rgb(155, 155, 155);
+}
+.belowDiv
+{
+    padding-top: 30px;
+    /* display: none; */
+}
+.drowDownClass
+{
+    display:none;
+    margin-top: 45px;
+    background-color: aliceblue;
+    z-index: 3;
+    box-shadow: 1px 1px 1px rgb(155, 155, 155);
+}
+.addDropDownClass
+{
+    display:block;
+    
+}
+.allPropertySpanLeft
+{
+    height:500px;
+    width:450px;
+    display: inline-block;
+    /* margin-left: 80px; */
+    padding-top: 20px;
+    border-style: inset;
+    background-color: rgb(255, 255, 255);
+}
+.FindAllPropertySpanSpan
+{
+    margin-left: 20px;
+    /* margin-top: 20px; */
+    width: 201px;
+    height: 150px;
+    display: block;
+    float: left;
+    position: relative;
+}
+.FindAllPropertySpan
+{
+    width: 200px;
+    height: 120px;
+    display: inline-block;
+}
+.FAPSImg
+{
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+}
+.FindallPropertySpanRight
+{
+    height:500px;
+    width: auto;
+    display: none;
+    margin-left: 20px;
+}
+.allPropertySpanRight
+{
+    height:505px;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+}
+.FAPSImgRight
+{
+    width: 600px;
+    height:400px;
+}
+.FindAllPropertySpan:hover
+{
+    box-shadow: 1px 1px 1px rgb(155, 155, 155);
+}
+.FindAllPropertySpan:hover .FAPSImg
+{
+    width: 200px;
+    height: 120px;
+}
+.smallProfileImg
+{
+    width:45px;
+    height:45px;
+}
+#profileOnBanner
+{
+margin-right: 20px;
+display: block;
+float: right;
+width: 200px;
+margin-top: 20px;
+}
+.smallProfileTxt
+{
+    width: 150px;
+    height:45px;
+    padding-left: 20px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 2px;
+    font-size: 10px;
+}
+.navTopSpan:hover
+{
+    background-color: rgb(194, 180, 180);
+}
+#navTopSpanMap:hover
+{
+    background-color: rgb(194, 180, 180);
+}
+#findAllProperties
+{
+    height:600px;
+    padding-top: 8px;
+}
+
+.contactContainer{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px;
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=reset]
+  {
+    background-color: rgb(209, 120, 37);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .propertyIntroClass
+  {
+      float:right;
+      margin-left: 20px;
+      padding-top: 50px;
+      display: block;
+      height:500px;
+      width: 400px;
+  }
+  .propertyIntroClass div{
+      margin: 10px;
+  }
+
+  ul
+  {
+      line-height: 30px;
+  }
+  .footerClass
+  {
+      height:60px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+  }

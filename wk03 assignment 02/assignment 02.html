@@ -1,0 +1,326 @@
+<!doctype html>
+<!--Created by Ting Li for Assignment 02 on 24 Sep 2018-->
+<!--Student ID: 301025864; Section 213-002-->
+<html language="en">
+    <head>
+        <title>Global Warmming</title>
+        <meta charset="utf-8">
+        <script>
+            function mInfor(){
+                var isPinforShow=document.getElementById("pInfor").style.display=="block";
+                if (isPinforShow){ 
+                    document.getElementById("pInfor").style.display="none";
+                    document.getElementById("mInforChange").style.display="block";
+                    document.getElementById("clickme").innerHTML="[Back]";
+                }
+                else{
+                    document.getElementById("pInfor").style.display="block";
+                    document.getElementById("mInforChange").style.display="none";
+                    document.getElementById("clickme").innerHTML="[Clik me for More Information]";    
+                }
+            // document.getElementById("pInfor").innerHTML=
+            // document.getElementById("mInforChange").innerHTML;
+            }
+        </script>
+        <style>
+            .mainBodyStyle{
+                font-family: verdana;
+                margin:0;
+            }
+            .bodyLevel1{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .header{
+                padding-top:0px;
+                padding-left:20px;
+                margin-top:0;
+                background: -webkit-linear-gradient(left,rgba(255, 255, 255, 0.8),rgba(179, 237, 245, 0.6));
+            }
+            .headerBackImg{
+                background-image: url("ass02images/blueshan.jpg");
+                background-repeat: no-repeat;
+                background-size:contain;
+            }
+            .headerImg{
+                float:left;
+                height:100%;
+                width:200px;
+            }
+            .headerPosition{
+                padding-top: 40px;
+            }
+            .header1{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            .header2{
+                font-size: 1em;
+                font-style: italic;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .headTab{
+                background-color:rgba(12, 32, 75, 0.5);
+                height:50px;
+                font-size: 1.3em;
+                color: white;
+            }
+            .headTab a{
+                text-decoration: none;
+                color:white;
+                background-color: transparent;
+            }
+            .headTab a:active{
+                color:white;
+            }
+            .headTab a:visited{
+                text-decoration:none;
+                background-color:transparent;
+                color:white;
+            }
+            .headTab a:hover{
+                background-color: transparent;
+            }
+            .dropdownLinksC a:hover{
+                text-decoration:none;
+                background-color:navajowhite;
+                color:black;
+            }
+            .mInforStyle{
+                color:midnightblue;
+                font-size:14px;
+            }
+            .sndBody{
+                background-color:rgba(243, 229, 212, 1);
+                padding-left: 20px;
+                padding-right: 40px;
+                height: 1000px;
+            }
+            .sndBodyL{
+                width:225px;
+                float: left;
+                height:500px;
+                background-color: transparent;
+                /* padding-top:40px; */
+                border-right: 1px;
+                border-right-color: darkgoldenrod;
+                border-right-style: dotted;
+                font-size:1em;
+            }
+            .sndBodyLU{
+                height:40px;
+                background-color: transparent;
+            }
+            .sndBodyLsub div{
+                width:200px;
+                height:50px;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            a:link{
+                color:black;
+            }
+            a:hover{
+                color:red;
+            }
+            a:active{
+                color: aquamarine;
+            }
+            /* a:visited{
+                color:black;
+            } */
+            .sndBodyM{
+                height:500px;
+                width:650px;
+                overflow: hidden;
+                font-size: 1.15em;
+                position: relative;
+                padding-top: 20px;
+                padding-left: 10px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .quotLinkFrom{
+                float:right;
+                font-size: 0.9em;
+            }
+            /* .mInforChangeVision{
+                display: none; */
+                /* } */
+            .headNavHome{
+                height: 41px;
+                width: 200px;
+                text-align: center;
+                padding-top: inherit;
+                display: inline-block;
+                font-size: inherit;
+                text-decoration: none;
+                padding-top: 9px;
+            }
+            .headNavHome:hover{
+                background-color:rgba(12, 32, 75, 0.6);
+            }
+            .headNavHome a:link{
+                color:white;
+            }
+            .dropdownLinksB{
+                position: relative;
+                display: inline-block;
+                font-size: inherit;
+                cursor: pointer;
+                font-size: inherit;
+                background-color: transparent;
+                color:inherit;
+                height: 41px;
+                padding-top: 9px;
+            }
+            .dropdownLinksC{
+                display:none;
+                position: absolute;
+                min-width: 300px;
+                box-shadow: 5px 8px 16px 0px rgba(127, 158, 224, 0.8); 
+                z-index: 1;
+                background-color: rgba(12, 32, 75, 0.6);
+                margin-top: 16px;
+                font-size: 14px;
+            }
+            .dropdownLinksB:hover{
+                background-color: rgba(12, 32, 75, 0.6);
+            }
+            .dropdownLinksB:hover .dropdownLinksC{
+                display: block;
+            }
+            .dropdownLinksC a{
+                /* color: black; */
+                padding:5px;
+                text-decoration: none;
+                display: block;
+                color: white;
+            }
+            .bodyImgR{
+                float: right;
+                width: 25%;
+                height: 25%;
+                padding-top: 120px;
+            }
+            .textLineSpace{
+                line-height: 33px;
+            }
+            .textLinkFormat{
+                text-decoration: none;
+            }
+            .liststyleL{
+                list-style: circle;
+                padding-left: 15px;
+                color:lightslategray;
+            }
+            .thiSubBoy{
+                width:680px;
+                height:380px;
+                background-color:snow;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+            }
+            .thiSubBoy img:hover{
+                width:110%
+            }
+            .botLine{
+                height: 200px;
+                width: inherit;
+                background-color: rgb(7, 5, 37);
+                color:white;
+                font-size:14px;
+                padding-top:5px;
+            }
+            .botLineC{
+                text-align: center;
+                padding-top: 10px;
+            }
+            .botLineC a{
+                color: white
+            }
+        </style>
+    </head>
+    <body class="mainBodyStyle">
+        <div class="bodyLevel1">
+            <div class="headerBackImg">
+                <div class="header"style="height: 150px;">
+                    <div class="headerImg"></div>
+                    <div class="headerPosition">
+                        <div class="header1">It is Time to Protect the Earth</div>
+                        <div class="header2">A website for Protect Area</div>
+                    </div>
+                  </div>  
+                 <div class="headTab">
+                     <div class="headNavHome">
+                     <a href="../index.html">Home Page</a>
+                     </div>
+                     <div class="dropdownLinksB">
+                         <div>Famous Protected Area</div>
+                         <div class="dropdownLinksC">
+                             <a id="a2" href="https://www.conservation.org/projects/Pages/marae-moana-cook-islands-marine-park.aspx"target="_blank">Marae Moana</a>
+                             <a id="a2" href="https://www.mfat.govt.nz/en/environment/antarctica/ross-sea-region-marine-protected-area/"target="_blank">Ross Sea Region Marine Protected Area</a>
+                             <a id="a2" href="https://www.papahanaumokuakea.gov/"target="_blank">Papahānaumokuākea Marine National Monument</a>
+                             <a id="a2" href="https://en.wikipedia.org/wiki/Natural_Park_of_the_Coral_Sea"target="_blank">Natural Park of the Coral Sea</a>
+                             <a id="a2" href="https://www.fpir.noaa.gov/MNM/mnm_prias.html"target="_blank">Pacific Remote Islands Marine National Monument</a>
+                             <a id="a2" href="http://www.gov.gs/environment/marine-protected-area/"target="_blank">South Georgia Marine Protected Area</a>
+                         </div>
+                     </div>
+                </div>
+                 <div class="sndBody">
+                        <a href="https://en.wikipedia.org/wiki/Jiuzhaigou"title="click to visit the wiki of JiuzhaiGou national park"target="_blank"><img class="bodyImgR" src="ass02images/jiuzhaigou.jpg" alt="image of JuiZhaiGou National Park"></a>
+                        <div class="sndBodyLU"></div>
+                    <div class="sndBodyL sndBodyLsub">
+                          <ul class="liststyleL">
+                          <li><div><a href="https://www.iucn.org/theme/protected-areas/our-work/protected-area-solutions"target="_blank">Protected area solutions</a></div></li>
+                          <li><div><a href="https://www.iucn.org/theme/protected-areas/our-work/capacity-development"target="_blank">Capacity development</a></div></li>
+                          <li><div><a href="https://www.iucn.org/theme/protected-areas/our-work/world-database-protected-areas"target="_blank">World Database on Protected Areas</a></div></li>
+                          <li><div><a href="https://www.iucn.org/theme/protected-areas/our-work/projects"target="_blank">PROJECTS</a></div></li>
+                          <li><div><a href="https://www.iucn.org/theme/protected-areas/our-work/governance-equity-and-rights"target="_blank">Governance, equity and rights</a></div></li>
+                          <li><div><a href="https://www.iucn.org/theme/protected-areas/our-work/newsletter"target="_blank">Newsletter</a></div></li>
+                          </ul>
+                    </div>
+                    <div class="sndBodyM">
+                             <p style="text-transform:uppercase"><b>What is a Protect Area</b></p>
+                             <a id="clickme" onclick="mInfor()" class="mInforStyle">[Clik me for More Information]</a>
+                        <blockquote>
+                          <a class="textLinkFormat"  href="https://www.iucn.org/theme/protected-areas/about">
+                                <div id="pInfor" class="textLineSpace">
+                                 A protected area is a clearly defined geographical space, recognised, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values
+                                </div> 
+                                <!-- <div class="mInforChangeVision">
+                                </div> -->
+                                <em>
+                                <div id="mInforChange" class="textLineSpace"style="display:none;">
+                                        Protect Area could be national parks, wilderness areas, community conserved areas, nature reserves and so on – are a mainstay of biodiversity conservation, while also contributing to people’s livelihoods, particularly at the local level. Protected areas are at the core of efforts towards conserving nature and the services it provides us – food, clean water supply, medicines and protection from the impacts of natural disasters. Their role in helping mitigate and adapt to climate change is also increasingly recognized; it has been estimated that the global network of protected areas stores at least 15% of terrestrial carbon.
+                                </div>
+                             
+                                <div class="quotLinkFrom">~~~from 7CIUCN Website</div>
+                           </a>
+                            </em>
+                        </blockquote>
+                    </div>
+                     <div class="thiSubBoy">
+                            <div class="thiSubBoyImg">
+                              <a href="https://en.jiuzhai.com/"target="_blank"title="click to visit JiuZhaiGou WebSite"><img src="ass02images/bird.jpg" alt="Image of Bird"></a>
+                            </div>
+
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="botLine">
+            <div class="botLineC">&copy;&nbsp;&nbsp;Copyright Ting - Comp213-002 - Web interface Design</div>
+            <div class="botLineC">Assignment 2 - protected-areas</div>
+            <div class="botLineC">
+                <a href="https://www.jiuzhai.com/tourism-product/photography">JiuzhaiGou Image Source (official website)</a>
+            </div>
+        </div>
+    </body>
+</html>

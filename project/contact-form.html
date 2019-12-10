@@ -1,0 +1,65 @@
+<!doctype html>
+<!--Ting Li 301025864-->
+<html language="en">
+
+<head>
+    <meta content="text/html" ;charset="utl-8" http-equiv="Conetent-Type">
+    <meta content="comp213 real estate project" name="keywords">
+    <meta content="comp213-project-real estate" name="description">
+    <link href="css/PCCSSProject.css" rel="stylesheet" type="text/css">
+    <script src="js/projectJava.js"></script>
+</head>
+
+<body>
+    <div id="contact" class="showSubDiv">
+        <div class="contactContainer">
+            <form method="post" action="mailto:mycentry1986@gmail.com" enctype="text/plain">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+                <label for="phoneInput">Phone</label>
+                <input type="tel" id="phoneInput" name="phoneNumber" placeholder="(xxx)xxx-xxxx">
+                <label for="emailInput">Email</label>
+                <input type="email" id="emailInput" name="emailNumber" placeholder="John@xxxx.com">
+                <br><br>
+                <label>Type of the Property</label>
+                <select id="propertyType" name="Type of property">
+                    <option value="house" selected>House</option>
+                    <option value="house">Condominium</option>
+                </select>
+                <label>bedrooms</label>
+                <select id="bedroomNumber" name="bedroomNumber">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>bathrooms</label>
+                <select id="bathroomsNumber" name="bathroomsNumber">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>price range</label>
+                &nbsp;&nbsp;$0<input id="price" name="price" type="range" max="5000000" min="0">$5,000,000
+                <br><br>
+                <label for="subject">Subject Comments</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Renew Form">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

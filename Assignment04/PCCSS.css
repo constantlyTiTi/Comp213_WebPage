@@ -1,0 +1,267 @@
+/* .bannerHead
+{
+    height:1000px;
+    background-color: black;
+}
+.bannerBackgroundVideo
+{
+    height:100%;
+    width: 100%; 
+}*/
+.bodyContent
+{
+padding-left:20px;
+}
+.leftSiteClass
+{
+    display:block;
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+.leftEnterClass
+{
+    padding-top:5px;
+    padding-left:10px;
+}
+.leftSiteNavClass
+{
+    height: 30px;
+    text-align: right;
+    width: 150px;
+    font-family: Arial;
+    font-size: 1em;
+    padding-top:10px;
+    padding-right:50px;
+    cursor: pointer;
+}
+.bodyContent
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:980px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+    /* border-width:1px; */
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+}
+.rightSite
+{
+    width:700px;
+    height:600px;
+    display:inline-block;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial;
+    font-size: 1.0em;
+    padding-top:20px;
+    padding-left:10px;
+}
+.rightSiteTag
+{
+    width: 600px;
+    height:500px;
+}
+/* .bannerNav */
+/* { */
+    /* height:50px; */
+    /* width:1251px; */
+    /* background-color:rgb(146, 146, 76); */
+    /* position: sticky;
+    top:0; */
+/* } */
+.divBelowNavClass
+{
+    height:10px;
+}
+.bannerNavAssDivClass{
+    display: inline-block;
+    width:250px;
+}
+.bannerNavClass
+{
+    font-size: 1.2em;
+    font-family: Verdana;
+    width:130px;
+    height:40px;
+    text-align: center;
+    padding-top:10px;
+    float: left;
+}
+.bannerNavClassAss
+{
+    font-size: 1.2em;
+    font-family: Verdana;
+    width:180px;
+    height:40px;
+    text-align: center;
+    padding-top:10px;
+    display: block;  
+}
+#homepageNav:hover
+{
+    background-color:rgb(97, 97, 52);
+    color: antiquewhite;
+}
+.assignmentNavDropdownClass
+{
+    height:105px;
+    width:250px;
+    position: relative;
+    font-size: 1.0em;
+    font-family: Verdana;
+    background-color:rgb(97, 97, 52,0.9);
+    display:none;
+    box-shadow: 2px 2px 1px gray;
+    color:antiquewhite;
+    z-index: 1;
+}
+.dropdownClass
+{
+    padding-top: 3px;
+    padding-bottom: 2px;
+    width:240px;
+    height:30px;
+    padding-left: 10px;
+}
+.dropdownClass:hover
+{
+    background-color:rgba(46, 46, 25);
+}
+a:link
+{
+    color:black;
+}
+a:visited
+{
+    color:black;
+}
+a:hover
+{
+text-decoration: none;
+color: antiquewhite;
+}
+a:active
+{
+text-decoration: none;
+color: red;
+}
+#assignmentNavDropdown a:visited
+{
+text-decoration: none;
+color: antiquewhite;
+}
+#assignmentNavDropdown a:link
+{
+text-decoration: none;
+color: antiquewhite;
+}
+.formClass
+{
+    background-color: rgb(209, 209, 194);
+}
+.optionClass
+{
+    height: 30px;
+    font-size:1em;
+    /* display:inline-block; */
+    text-align: left;
+    padding-top: 10px;
+    width: 120px;
+}
+.commentBox
+{
+    height:100px;
+    width: 500px;
+    display: block;
+}
+.questionMainClass
+{
+    height:30px;
+    font-size: 1.1em;
+}
+.questionClass
+{
+    height:40px;
+    padding-top:10px;
+    font-size:1.1em;
+    width: 650px;
+}
+.commentRSTitleBack
+{
+ background-color: bisque;  
+}
+.commentQuestionClass
+{
+    height:30px;
+    width: 650px;
+    display: block;
+    padding-top:20px;
+}
+#instructorRS
+{
+    display: inline-block;
+}
+#courseRS
+{
+    display: none;
+}
+#generalRS
+{
+    display: none;
+}
+#commentRS
+{
+    display: none;
+}
+#submitBox
+{
+    height: 20px;
+    float:left;
+    width: 60px;
+    display: none;
+}
+#resetBox
+{
+    height: 20px;
+    width: 150px;
+    display: block;
+    float:right;
+}
+.submitBoxClass
+{
+    /* height:60px; */
+    width:100px;
+    font-size: 1.2em;
+}
+.footer
+{
+    padding-top:10px;
+    text-align: center;
+}
+.educationHref a:hover
+{
+    color:blueviolet;
+}
+.educationHref a:link
+{
+    color:black;
+}
+.educationHref a:active
+{
+    color:red;
+}
+.educationHref a:visited
+{
+    color:black;
+}
+.leftSiteColorClick
+{
+    background-color: rgba(235, 235, 209,0.9);
+}
+.leftSiteColorMouseOver
+{
+    background-color: rgba(148, 148, 137,0.8);
+}
